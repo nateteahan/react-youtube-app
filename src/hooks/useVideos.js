@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import youtube from '../api/YouTube'
-const KEY = 'AIzaSyBh2M7irBGUugRP1L_jMnV0P9-fcAqaUZI'
+const KEY = process.env.REACT_APP_GOOGLE_API_KEY
 
 const useVideos = (defaultSearchTerm) => {
     const [videos, setVideos] = useState([])
